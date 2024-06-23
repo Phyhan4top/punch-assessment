@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkIcon } from "../../../re-use/DynamicIcons/LinkIcon";
+import { LinkIcon } from "../../../../Icons/LinkIcon";
 
 export const CardOne = ({ type }) => {
   let ln, img, Header, list, style;

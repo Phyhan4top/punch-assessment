@@ -1,9 +1,9 @@
 import React from "react";
-import { LinkIcon } from "../DynamicIcons/LinkIcon";
+import { LinkIcon } from "../../Icons/LinkIcon";
 import style from "./style.module.css";
-import { NumberOneIcon } from "../DynamicIcons/NumberOneIcon";
-import { NumberTwoIcon } from "../DynamicIcons/NumberTwoIcon";
-import { NumberThreeIcon } from "../DynamicIcons/NumberThreeIcon";
+import { NumberOneIcon } from "../../Icons/NumberOneIcon";
+import { NumberTwoIcon } from "../../Icons/NumberTwoIcon";
+import { NumberThreeIcon } from "../../Icons/NumberThreeIcon";
 export const DisplayCard = ({ num, h, p, customStyle }) => {
   let src, svg, bg;
 

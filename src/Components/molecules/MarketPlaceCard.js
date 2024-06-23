@@ -1,8 +1,8 @@
 import React from "react";
-import { LogoCard } from "../../../atoms/LogoCard/LogoCard";
-import style from "../style.module.css";
-import { RightArrowIcon } from "../DynamicIcons/RightArrowIcon";
-import { LeftArrowIcon } from "../DynamicIcons/LeftArrowIcon";
+import { LogoCard } from "../atoms/LogoCard";
+import style from "./style.module.css";
+import { RightArrowIcon } from "../../Icons/RightArrowIcon";
+import { LeftArrowIcon } from "../../Icons/LeftArrowIcon";
 
 const Card = ({ header, logos, type }) => {
   return (
@@ -18,7 +18,7 @@ const Card = ({ header, logos, type }) => {
           {logos.map((el, i) => {
             return (
               <LogoCard text={el.text} key={i}>
-                <img src={el.logo} alt={el.text}/>
+                <img src={el.logo} alt={el.text} />
               </LogoCard>
             );
           })}

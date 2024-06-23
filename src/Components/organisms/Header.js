@@ -1,6 +1,6 @@
-import React from 'react'
-import { Navlink } from '../../atoms/NavLink/Navlink'
-import { LogoIcon } from '../re-use/DynamicIcons/LogoIcon';
+import React from "react";
+import { Navlink } from "../atoms/Navlink";
+import { LogoIcon } from "../../Icons/LogoIcon";
 
 export const Header = () => {
   /**
@@ -18,7 +18,7 @@ export const Header = () => {
       className="max-w-[1500px] h-[70px] flex items-center justify-between m-auto pt-[9px] mt-[36px] pr-[9px] pb-[8px] pl-[25px] rounded-[15px]  bg-[#525aa0] "
       style={{ boxShadow: "0 15px 25px 0 rgba(0, 0, 0, 0.15)" }}
     >
-     <LogoIcon/>
+      <LogoIcon />
       <div className="ml-10 grid grid-cols-5  justify-center items-center">
         <Navlink text={"Find Work"} color={"white"} />
         <Navlink text={"Find Talent"} color={"white"} />
@@ -34,4 +34,4 @@ export const Header = () => {
       </div>
     </div>
   );
-}
+};

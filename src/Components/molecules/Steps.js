@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-import { OpenIcon } from "./DynamicIcons/OpenIcon";
+import { OpenIcon } from "../../Icons/OpenIcon";
 
 export const Steps = ({ num, sub, info }) => {
   const [clicked, setClicked] = useState(false);

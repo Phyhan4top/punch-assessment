@@ -1,5 +1,5 @@
 import React from "react";
-import { Steps } from "../../re-use/Steps";
+import { Steps } from "../../molecules/Steps";
 import style from "./style.module.css";
 
 export const FourSection = () => {

@@ -1,15 +1,12 @@
 import React from "react";
-import { Header } from "./Components/molecules/Header/Header";
-import { Footer } from "./Components/molecules/sections/EighthSection/EighthSection";
 import { LandingPage } from "./Components/pages/LandingPage";
+import { LandingPageTemplate } from "./Components/templates/LandingPageTemplate";
 
 const App = () => {
   return (
-    <div>
-      <Header />
+    <LandingPageTemplate>
       <LandingPage />
-      <Footer />
-    </div>
+    </LandingPageTemplate>
   );
 };
 

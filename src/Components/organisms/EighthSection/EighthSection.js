@@ -1,7 +1,7 @@
 import React from "react";
-import { LinkIcon } from "../../re-use/DynamicIcons/LinkIcon";
+import { LinkIcon } from "../../../Icons/LinkIcon";
 import style from "./style.module.css";
-import { LogoIcon } from "../../re-use/DynamicIcons/LogoIcon";
+import { LogoIcon } from "../../../Icons/LogoIcon";
 export const Footer = () => {
   return (
     <div className={style.Frame}>

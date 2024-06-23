@@ -1,5 +1,5 @@
 import React from "react";
-import { DisplayCard } from "../../re-use/Card/DisplayCard";
+import { DisplayCard } from "../../molecules/DisplayCard";
 
 export const FifthSection = () => {
   return (

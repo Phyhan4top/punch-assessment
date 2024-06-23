@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
-import { LeftArrowIcon } from "../../re-use/DynamicIcons/LeftArrowIcon";
-export const SeventSection = () => {
+import { LeftArrowIcon } from "../../../Icons/LeftArrowIcon";
+export const SeventhSection = () => {
   return (
     <div className="bg-[#f3f3f3] h-[1207px] w-full">
       <div className={style.frame}>

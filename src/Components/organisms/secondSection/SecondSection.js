@@ -1,5 +1,5 @@
 import React from "react";
-import { MarketPlaceCard } from "../../re-use/Card/MarketPlaceCard";
+import { MarketPlaceCard } from "../../molecules/MarketPlaceCard";
 
 export const SecondSection = () => {
   return (

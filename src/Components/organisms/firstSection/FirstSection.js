@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-import { LeftArrowIcon } from "../../re-use/DynamicIcons/LeftArrowIcon";
+import { LeftArrowIcon } from "../../../Icons/LeftArrowIcon";
 const FirstBlock = () => {
   return (
     <div className="">

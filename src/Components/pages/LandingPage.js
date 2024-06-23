@@ -1,12 +1,11 @@
 import React from 'react'
-import { FirstSection } from '../molecules/sections/firstSection/FirstSection';
-import { SecondSection } from '../molecules/sections/secondSection/SecondSection';
-import { ThirdSection } from '../molecules/sections/thirdSection/ThirdSection';
-import { FourSection } from '../molecules/sections/fourthSection/FourSection';
-import { FifthSection } from '../molecules/sections/FifthSection/FifthSection';
-import { SixthSection } from '../molecules/sections/SixthSection/SixthSection';
-import { SeventSection } from '../molecules/sections/SeventSection/SeventSection';
-
+import { FirstSection } from '../organisms/firstSection/FirstSection';
+import { SecondSection } from '../organisms/secondSection/SecondSection';
+import { ThirdSection } from '../organisms/thirdSection/ThirdSection';
+import { FourSection} from '../organisms/fourthSection/FourSection';
+import { FifthSection } from "../organisms/FifthSection/FifthSection";
+import { SixthSection} from '../organisms/SixthSection/SixthSection';
+import { SeventhSection } from "../organisms/SeventSection/SeventSection"
 export const LandingPage = () => {
   return (
     <div>
@@ -16,7 +15,7 @@ export const LandingPage = () => {
       <FourSection />
       <FifthSection />
       <SixthSection />
-      <SeventSection />
+      <SeventhSection />
     </div>
   );
 }

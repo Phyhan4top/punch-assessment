@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./style.module.css";
-import { LeftArrowIcon } from "../../re-use/DynamicIcons/LeftArrowIcon";
-import { RightArrowIcon } from "../../re-use/DynamicIcons/RightArrowIcon";
-import { GrooveIcon } from "../../re-use/DynamicIcons/GrooveIcon";
+import {LeftArrowIcon} from "../../../Icons/LeftArrowIcon"
+import {RightArrowIcon} from "../../../Icons/RightArrowIcon"
+import {GrooveIcon} from "../../../Icons/GrooveIcon"
 
 const PartA = () => {
   return (
