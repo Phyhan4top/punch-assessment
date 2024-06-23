@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
+import { LeftArrowIcon } from "../../re-use/DynamicIcons/LeftArrowIcon";
 const FirstBlock = () => {
   return (
     <div className="">
       <div className={style.firstH1}>
         Finding the right fit
-        <img className="inline" src="/logos/zwilt-tba-1-01 2person1.png" />
+        <img
+          className="inline"
+          src="/imgs/zwilt-tba-1-01 2person1.png"
+          alt="person-2"
+        />
         has never been easier.
       </div>
       <p className={style.firstP}>
@@ -22,33 +27,22 @@ const FirstBlock = () => {
           type="search"
           id="search"
         />
-        <svg
-          className="absolute right-0"
-          width="74"
-          height="74"
-          viewBox="0 0 74 74"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="74" height="74" rx="15" fill="#FFBE2E" />
-          <path
-            d="M38.3588 36.5C38.3588 40.036 35.3683 42.9024 31.6794 42.9024C27.9905 42.9024 25 40.036 25 36.5C25 32.964 27.9905 30.0976 31.6794 30.0976C35.3683 30.0976 38.3588 32.964 38.3588 36.5Z"
-            fill="#202229"
-          />
-          <path d="M36.6412 44L36.6412 29L50 36.5L36.6412 44Z" fill="#202229" />
-        </svg>
+        <div className="absolute right-0 flex justify-center items-center h-[74px] w-[74px] rounded-[16px] bg-[#FFBE2E]">
+          <LeftArrowIcon />
+        </div>
       </div>
     </div>
   );
 };
 
 const SecondBlock = () => {
-  const parts = ["IT & Development", "Design and Creative"];
   const [clickIt, setClickIt] = useState(true);
   const [clickDes, setClickDes] = useState(false);
 
   return (
-    <div className={`${style.SecondCont}`}>
+    <div
+      className={`lg:w-[920px] w-[80%] lg:h-[230px] h-[300px] ${style.SecondCont}`}
+    >
       <div
         className={
           "w-[450px] bg-[#d2d2d2] h-[44px] flex rounded-[15px]  mb-[20px]"
@@ -73,7 +67,7 @@ const SecondBlock = () => {
           Design and Creative
         </span>
       </div>
-      <div className="grid grid-cols-3 w-full justify-items-center items-center">
+      <div className="grid  grid-flow-col w-full justify-items-center items-center text-wrap">
         <div className="flex flex-col gap-3">
           <p>Python Developer</p>
           <p>Shopify Developer</p>
@@ -102,7 +96,6 @@ export const FirstSection = () => {
       <FirstBlock />
       <SecondBlock />
       <img src="/logos/UnionSlantLine.svg" className="w-full mt-10" />
-     
     </div>
   );
 };

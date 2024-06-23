@@ -1,0 +1,11 @@
+.linkIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49.8px;
+  height: 49.8px;
+  margin: 0 8px 0 0;
+  padding: 19.5px 16.1px 20.2px 16.8px;
+  border-radius: 20.2px;
+  background-color: black;
+}

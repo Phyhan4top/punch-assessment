@@ -35,9 +35,10 @@
 .SecondCont {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
- width: 920px;
-  height: 230px;
+ /* width: 920px; */
+  /* height: 230px; */
   flex-grow: 0;
   margin: 40px 190px 0;
   padding: 15px 98px 30px 65px;

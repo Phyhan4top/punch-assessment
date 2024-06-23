@@ -1,5 +1,5 @@
-import React from 'react'
-import { DisplayCard } from '../../re-use/Card/DisplayCard';
+import React from "react";
+import { DisplayCard } from "../../re-use/Card/DisplayCard";
 
 export const FifthSection = () => {
   return (
@@ -8,17 +8,15 @@ export const FifthSection = () => {
 
       <div>
         <DisplayCard
-          
           num={1}
           p={
             "Explore the vast Zwilt marketplace to find the candidate that meets your needs."
           }
           h={"Find your next star performer."}
         />
-        
-        
+
         <DisplayCard
-          customStyle={{margin:"-10px",}}
+          customStyle={{ margin: "-10px" }}
           num={2}
           p={
             "Explore the vast Zwilt marketplace to find the candidate that meets your needs."
@@ -26,7 +24,6 @@ export const FifthSection = () => {
           h={"Find your next star performer."}
         />
 
-       
         <DisplayCard
           num={3}
           p={
@@ -34,8 +31,7 @@ export const FifthSection = () => {
           }
           h={"Find your next star performer."}
         />
-        
       </div>
     </div>
   );
-}
+};

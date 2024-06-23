@@ -7,6 +7,7 @@ import { FourSection } from './Components/molecules/sections/fourthSection/FourS
 import { FifthSection } from './Components/molecules/sections/FifthSection/FifthSection'
 import { SeventSection } from './Components/molecules/sections/SeventSection/SeventSection'
 import { Footer } from './Components/molecules/sections/EighthSection/EighthSection'
+import { SixthSection } from './Components/molecules/sections/SixthSection/SixthSection'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <ThirdSection/>
       <FourSection/>
       <FifthSection/>
+      <SixthSection/>
       <SeventSection/>
       <Footer/>
     </div>

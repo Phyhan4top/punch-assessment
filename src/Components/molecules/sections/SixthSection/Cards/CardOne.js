@@ -1,67 +1,106 @@
-import React from 'react'
-const Header = () => {
+import React from "react";
+import { LinkIcon } from "../../../re-use/DynamicIcons/LinkIcon";
+
+export const CardOne = ({ type }) => {
+  let ln, img, Header, list, style;
+  if (type === 1) {
+    ln = "#50589f";
+    img = "/imgs/Group 626340Card-One .png";
+    Header = "Onboard without the risk.";
+    list = [
+      "We pick the best for you to select.",
+      "Thousands of vetted candidates in dozens of categories.",
+      "Risk-free resource swapping for the best fit.",
+    ];
+    style = {
+      width: "464px",
+      height: "128px",
+      // margin: "91px 80px 37px 0",
+      fontFamily: " Switzer",
+      fontSize: "54px",
+      fontWeight: " bold",
+      fontStretch: " normal",
+      fontStyle: "normal",
+      lineHeight: 1.19,
+      letterSpacing: "normal",
+      textAlign: "left",
+      color: "black",
+    };
+  } else if (type === 2) {
+    ln = "#ffbe2e";
+    img = "/imgs/Group 626506Card-two.png";
+    Header = "An open book.";
+    list = [
+      "Easy and transparent one-to-one chat with candidates.",
+      "Simple and convenient payment methods.",
+      "Review past ratings.",
+    ];
+    style = {
+      width: "239px",
+      height: "128px",
+      // margin: "91px 80px 37px 0",
+      fontFamily: " Switzer",
+      fontSize: "54px",
+      fontWeight: " bold",
+      fontStretch: " normal",
+      fontStyle: "normal",
+      lineHeight: 1.19,
+      letterSpacing: "normal",
+      textAlign: "left",
+      color: "black",
+    };
+  } else {
+    ln = "#c7f4c2";
+    img = "/imgs/Group 626504Card-three.png";
+    Header = "Stay in the loop.";
+    list = [
+      "Track your staff activity down to every minute with screenshots.",
+      "Comprehensive timesheet data to process payments.",
+      "Create projects to organize and assign tasks more effectively.",
+    ];
+
+    style = {
+      width: "279px",
+      height: "128px",
+      // margin: "91px 80px 37px 0",
+      fontFamily: " Switzer",
+      fontSize: "54px",
+      fontWeight: " bold",
+      fontStretch: " normal",
+      fontStyle: "normal",
+      lineHeight: 1.19,
+      letterSpacing: "normal",
+      textAlign: "left",
+      color: "black",
+    };
+  }
   return (
-    <div className="mb-10">
-      <h1 className="text-4xl font-bold mb-5">Onboard without the risk.</h1>
-      <ul className="list-disc list-inside text-lg">
-        <li>We pick the best for you to select.</li>
-        <li>Thousands of vetted candidates in dozens of categories.</li>
-        <li>Risk-free resource swapping for the best fit.</li>
-      </ul>
-    </div>
-  );
-};
-const LearnMoreButton = () => {
-  return (
-    <button className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-full">
-      <svg
-        width="25"
-        height="15"
-        viewBox="0 0 25 15"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="mr-2"
-      >
-        <path
-          d="M13.3588 7.5C13.3588 11.036 10.3683 13.9024 6.67939 13.9024C2.99046 13.9024 -2.2912e-08 11.036 -1.55709e-08 7.5C-8.22979e-09 3.96403 2.99046 1.09756 6.67939 1.09756C10.3683 1.09756 13.3588 3.96403 13.3588 7.5Z"
-          fill="#ffffff"
-        />
-        <path
-          d="M11.6412 15L11.6412 2.41685e-08L25 7.5L11.6412 15Z"
-          fill="#ffffff"
-        />
-      </svg>
-      Learn More
-    </button>
-  );
-};
-const Card = () => {
-  return (
-    <div className="relative bg-white w-[437px] h-auto p-5 rounded-xl shadow-lg">
-      <img
-        src="/path/to/image.jpg"
-        alt="Ariana Marie"
-        className="w-24 h-24 rounded-full mx-auto"
-      />
-      <h3 className="text-center text-xl font-bold mt-3">Ariana Marie</h3>
-      <p className="text-center text-gray-500">UI/UX Designer</p>
-      <p className="text-center text-gray-500">3+ years as a design lead</p>
-      <button className="mt-5 bg-yellow-500 text-white py-2 px-4 rounded-full">
-        Take Interview
-      </button>
-    </div>
-  );
-};
-export const cardOne = () => {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white w-[1300px] h-[657px] p-10 rounded-[20px] shadow-lg">
-        <Header />
-        <div className="flex">
-          <LearnMoreButton />
-          <Card />
+    <div className="bg-white w-[1300px] h-[657px] p-10 rounded-[20px] shadow-lg flex  items-center">
+      <div className="flex flex-col gap-[39px]">
+        <h1 style={style}>{Header}</h1>
+        <div>
+          {list.length > 0 ? (
+            list.map((el, i) => {
+              return (
+                <div className="flex  items-center gap-2 text-nowrap" key={i}>
+                  <span
+                    className={`w-4 h-[7px]`}
+                    style={{ background: ln }}
+                  ></span>
+                  {el}
+                </div>
+              );
+            })
+          ) : (
+            <div className="flex  items-center gap-2">
+              <span className={`w-4 h-[7px]`} style={{ background: ln }}></span>{" "}
+              {list}
+            </div>
+          )}
         </div>
+        <LinkIcon text={"Learn More"} />
       </div>
+      <img src={img} className="h-[95%]" alt="card-sec" />
     </div>
   );
-}
+};
