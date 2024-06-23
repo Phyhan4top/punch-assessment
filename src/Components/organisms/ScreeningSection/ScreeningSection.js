@@ -2,7 +2,7 @@ import React from "react";
 import { Steps } from "../../molecules/Steps";
 import style from "./style.module.css";
 
-export const FourSection = () => {
+export const ScreeningSection = () => {
   const info =
     "Candidates are assessed through skill based questions in a virtual setting. Allowing you to gauge personality and cultural fit.";
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { CardOne } from "./Cards/CardOne";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-export const SixthSection = () => {
+export const ReasonsSection = () => {
   return (
     <div className="w-full h-[1001px] flex justify-center gap-4 items-center bg-[#edefff]">
       <div className="">

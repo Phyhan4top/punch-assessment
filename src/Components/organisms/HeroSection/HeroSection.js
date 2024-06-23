@@ -90,7 +90,7 @@ const SecondBlock = () => {
     </div>
   );
 };
-export const FirstSection = () => {
+export const HeroSection = () => {
   return (
     <div className="flex flex-col items-center">
       <FirstBlock />

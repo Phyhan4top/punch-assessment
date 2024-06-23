@@ -56,7 +56,7 @@ const PartB = () => {
     </div>
   );
 };
-export const ThirdSection = () => {
+export const TestimonialsSection = () => {
   return (
     <div className={`lg:h-[847px] h-[1200px] ${style.Component}`}>
       <div className="h-[1px] w-10 "></div>

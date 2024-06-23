@@ -1,7 +1,7 @@
 import React from "react";
 import { DisplayCard } from "../../molecules/DisplayCard";
 
-export const FifthSection = () => {
+export const CallToActionSection = () => {
   return (
     <div className="min-h-screen flex flex-col items-center py-10">
       <h1 className="text-[56px] font-bold mb-10">Start your journey today.</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
 import { LeftArrowIcon } from "../../../Icons/LeftArrowIcon";
-export const SeventhSection = () => {
+export const FaqSection = () => {
   return (
     <div className="bg-[#f3f3f3] h-[1207px] w-full">
       <div className={style.frame}>
