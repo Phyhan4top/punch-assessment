@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Header } from './Components/molecules/Header/Header'
+import { FirstSection } from './Components/molecules/sections/firstSection/FirstSection'
+import { SecondSection } from './Components/molecules/sections/secondSection/SecondSection'
+import { ThirdSection } from './Components/molecules/sections/thirdSection/ThirdSection'
+import { FourSection } from './Components/molecules/sections/fourthSection/FourSection'
+import { FifthSection } from './Components/molecules/sections/FifthSection/FifthSection'
+import { SeventSection } from './Components/molecules/sections/SeventSection/SeventSection'
+import { Footer } from './Components/molecules/sections/EighthSection/EighthSection'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <FirstSection/>
+      <SecondSection/>
+      <ThirdSection/>
+      <FourSection/>
+      <FifthSection/>
+      <SeventSection/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
